@@ -200,10 +200,11 @@ nav {
   height: 100vh;
   background-color: whitesmoke;
   position: relative;
-  clip-path: polygon(0 15%, 100% 0, 100% 100, 0% 100%);
+  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
 }
 
 .productImg {
+  padding-top: 50px;
   width: 50%;
 }
 
@@ -217,7 +218,7 @@ nav {
 
 .productTitle {
   font-size: 75px;
-  font-weight: 900;
+  font-weight: 800;
 }
 
 .productDesc {
@@ -234,7 +235,7 @@ nav {
   width: 32px;
   height: 32px;
   border-radius: 5px;
-  background-color: white;
+  background-color: black;
   margin-right: 10px;
   cursor: pointer;
 }
