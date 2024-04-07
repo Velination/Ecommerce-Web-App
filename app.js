@@ -7,7 +7,7 @@ const products = [
   {
     id: 1,
     title: "Air Force",
-    price: $119,
+    price: 119,
     colors: [
       { code: "black", img: "img/air.png" },
       {
@@ -19,7 +19,7 @@ const products = [
   {
     id: 2,
     title: "Air Jordan",
-    price: $149,
+    price: 149,
     colors: [
       { code: "lightgray", img: "img/jordan.png" },
       {
@@ -31,7 +31,7 @@ const products = [
   {
     id: 3,
     title: "Blazer",
-    price: $109,
+    price: 109,
     colors: [
       { code: "lightgray", img: "img/blazer.png" },
       {
@@ -43,7 +43,7 @@ const products = [
   {
     id: 4,
     title: "Crater",
-    price: $129,
+    price: 129,
     colors: [
       { code: "black", img: "img/crater.png" },
       {
@@ -55,7 +55,7 @@ const products = [
   {
     id: 5,
     title: "Hippie",
-    price: $99,
+    price: 99,
     colors: [
       { code: "gray", img: "img/hippie.png" },
       {
@@ -73,7 +73,7 @@ const currentProductImg = document.querySelector(".productImg");
 const currentProductTitle = document.querySelector(".productTitle");
 const currentProductPrice = document.querySelector(".productPrice");
 const currentProductColors = document.querySelectorAll(".color");
-const currentProductSizes = document.querySelectorALL(".size");
+const currentProductSizes = document.querySelectorAll(".size");
 
 // for making the front page slide through
 menuItems.forEach((item, index) => {
@@ -81,12 +81,35 @@ menuItems.forEach((item, index) => {
     // change the current slide
     wrapper.style.transform = `translatex(${-100 * index}vw)`;
 
-    // // change the chosen product
-    // chosenProduct = products[index];
+    // change the chosen product
+    chosenProduct = products[index];
 
-    // // change texts of currentProduct
-    // currentProductTitle.textContent = chosenProduct.title;
-    // currentProductPrice.textContent = chosenProduct.price;
-    // currentProductImg.src = chosenProduct.colors[0].img;
+    // change texts of currentProduct in the third border
+    currentProductTitle.textContent = chosenProduct.title;
+    currentProductPrice.textContent = "$" + chosenProduct.price;
+    currentProductImg.src = chosenProduct.colors[0].img;
+
+    // for the change of color in the shoes in the third border
+    currentProductColors.forEach((color, index) => {
+      color.style.backgroundColor = chosenProduct.colors[index].code;
+    });
+  });
+});
+
+currentProductColors.forEach((color, index) => {
+  color.addEventListener("click", () => {
+    currentProductImg.src = chosenProduct.colors[index].img;
+  });
+});
+
+// For the clicking of the size in the third border
+currentProductSizes.forEach((size, index) => {
+  size.addEventListener("click", () => {
+    currentProductSizes.forEach((size) => {
+      size.style.backgroundColor = "white";
+      size.style.color = "black";
+    });
+    size.style.backgroundColor = "black";
+    size.style.color = "white";
   });
 });
