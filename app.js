@@ -2,6 +2,7 @@
 const wrapper = document.querySelector(".sliderWrapper");
 const menuItems = document.querySelectorAll(".menuItem");
 
+
 // The products on slides on the second border
 const products = [
   {
@@ -112,4 +113,18 @@ currentProductSizes.forEach((size, index) => {
     size.style.backgroundColor = "black";
     size.style.color = "white";
   });
+});
+
+const productButton = document.querySelector(".productButton");
+const payment = document.querySelector(".payment");
+const close = document.querySelector(".close");
+
+// when the click on the buy button that the payment details should come out
+productButton.addEventListener("click", () => {
+  payment.style.display = "flex";
+});
+
+// the close button yu close the operation
+close.addEventListener("click", () => {
+  payment.style.display = "none";
 });

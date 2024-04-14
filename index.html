@@ -3,12 +3,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE-edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/b2e76a1882.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style.css" />
     <title>Sneakers</title>
   </head>
   <body>
-    <!-- start the first border -->
-    <nav>
+    <!-- start the first border header -->
+    <nav id="nav">
       <div class="navTop">
         <div class="navItem">
           <img src="./img/sneakers.png" alt="" />
@@ -27,6 +31,12 @@
         </div>
         <div class="navItem">
           <span class="limitedOffer">Limited Offer!</span>
+          <a href="login.html"><div class="productButton1">login</div></a>
+          <a href="logout.php"
+            ><button class="productButton1" class="btnLogin-popup">
+              Log Out
+            </button></a
+          >
         </div>
       </div>
       <div class="navBottom">
@@ -101,7 +111,7 @@
         </div>
       </div>
     </div>
-    <!-- End of the first border -->
+    <!-- End of the first border header -->
 
     <!-- start of the second border -->
     <div class="features">
@@ -140,7 +150,7 @@
     <div class="product" id="product">
       <img src="img/air.png" alt="" class="productImg" />
       <div class="productDetails">
-        <h1 class="productTitle">Air force</h1>
+        <h1 class="productTitle">Air Force</h1>
         <h2 class="productPrice">$199</h2>
         <p class="productDesc">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
@@ -160,12 +170,9 @@
         <button class="productButton">BUY NOW!</button>
       </div>
 
-      <!-- end of the third border -->
-      <!-- begin of the fourth border -->
       <div class="payment">
         <span class="close">X</span>
         <h1 class="payTitle">Personal Information</h1>
-
         <label>Name and surname</label>
         <input type="text" placeholder="John Doe" class="payInput" />
         <label>Phone Number</label>
@@ -186,7 +193,151 @@
         <button class="payButton">Checkout!</button>
       </div>
     </div>
+    <!-- end of the third border -->
+
+    <!-- beginning of the fourth border -->
+    <div class="gallery">
+      <div class="galleryItem">
+        <h1 class="galleryTitle">Be Yourself!</h1>
+        <img src="img/border4 (1).jpg" alt="" class="galleryImg" />
+      </div>
+      <div class="galleryItem">
+        <h1 class="galleryTitle">Step into Style</h1>
+        <img src="img/border5 (15).jpg" alt="" class="galleryImg" />
+      </div>
+      <div class="galleryItem">
+        <h1 class="galleryTitle">Footwear Fiesta</h1>
+        <img src="img/border4 (35).jpg" alt="" class="galleryImg" />
+      </div>
+    </div>
     <!-- end of the fourth border -->
+
+    <!-- beginning of the fifth border -->
+    <div class="newSeason">
+      <div class="nsItem">
+        <img src="img/border5 (17).jpg" alt="" class="nsImg" />
+      </div>
+      <div class="nsItem">
+        <h3 class="nsTitle">Fresh Footwear Picks</h3>
+        <h3 class="nsTitle">Strides Selection</h3>
+        <h3 class="nsTitle">New Showcase</h3>
+        <a href="#nav">
+          <button class="nsButton">CHOOSE YOUR STYLE</button>
+        </a>
+      </div>
+      <div class="nsItem">
+        <img src="img/border4 (5).jpg" alt="" class="nsImg" />
+      </div>
+    </div>
+    <!-- end of the fifth border -->
+
+    <!-- beginning of footer -->
+    <!-- <footer>
+      <div class="footerLeft">
+        <div class="footerMenu">
+          <h1 class="fMenuTitle">About Us</h1>
+          <ul class="fList">
+            <li class="fListItem">Company</li>
+            <li class="fListItem">Contact</li>
+            <li class="fListItem">Careers</li>
+            <li class="fListItem">Affiliates</li>
+            <li class="fListItem">Stores</li>
+          </ul>
+        </div>
+        <div class="footerMenu">
+          <h1 class="fMenuTitle">Useful Links</h1>
+          <ul class="fList">
+            <li class="fListItem">Company</li>
+            <li class="fListItem">Contact</li>
+            <li class="fListItem">Careers</li>
+            <li class="fListItem">Affiliates</li>
+            <li class="fListItem">Stores</li>
+          </ul>
+        </div>
+        <div class="footerMenu">
+          <h1 class="fMenuTitle">Products</h1>
+          <ul class="fList">
+            <li class="fListItem">Air Force</li>
+            <li class="fListItem">Air jordan</li>
+            <li class="fListItem">Blazer</li>
+            <li class="fListItem">Crater</li>
+            <li class="fListItem">Hippie</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footerRight">
+        <div class="footerRightMenu">
+          <h1 class="fMenuTitle">Subscribe to our newsletter</h1>
+          <div class="fMail">
+            <input type="text" placeholder="your@email.com" class="fInput" />
+            <button class="fbutton">Join!</button>
+          </div>
+        </div>
+        <div class="footerRightMenu">
+          <h1 class="fMenuTitle">Follow Us</h1>
+          <div class="fIcons">
+            <img src="img/facebook.png" alt="" class="fIcon" />
+            <img src="img/twitter.png" alt="" class="fIcon" />
+            <img src="img/instagram.png" alt="" class="fIcon" />
+            <img src="img/whatsapp.png" alt="" class="fIcon" />
+          </div>
+        </div>
+        <div class="footerRightMenu">
+          <span class="copyRight">@AI Tech. ALL rights reserved. 2024</span>
+        </div>
+      </div>
+    </footer> -->
+    <footer>
+      <div class="container">
+        <div class="logo">
+          <img src="img/sneakers.png" alt="" />
+        </div>
+        <div>
+          <ul class="menu">
+            <li>
+              <a href="index.html"> Home</a>
+            </li>
+            <li>
+              <a href="about.html">About</a>
+            </li>
+            <li>
+              <a href="contact">Contact</a>
+            </li>
+            <li>
+              <a href="service">service</a>
+            </li>
+          </ul>
+        </div>
+        <div class="main">
+          <!-- Facebook icon -->
+          <div class="icon fb">
+            <i class="fa-brands fa-facebook-f"></i>
+            <span>Facebook</span>
+          </div>
+          <!-- twitter icon -->
+          <div class="icon twt">
+            <i class="fa-brands fa-x-twitter"></i>
+            <span>twitter</span>
+          </div>
+          <!-- instagram icon -->
+          <div class="icon int">
+            <i class="fa-brands fa-instagram"></i>
+            <span>Instagram</span>
+          </div>
+          <!-- linkedin icon -->
+          <div class="icon lnk">
+            <i class="fa-brands fa-linkedin-in"></i>
+            <span>Linkedin</span>
+          </div>
+          <!-- youtube icon -->
+          <div class="icon you">
+            <i class="fa-brands fa-youtube"></i>
+            <span>Youtube</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end of footer-->
     <script src="app.js"></script>
   </body>
 </html>
